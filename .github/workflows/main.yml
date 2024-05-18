@@ -24,4 +24,4 @@ jobs:
 
     - name: Copy Build Artifact
       run: |
-        scp -pr dist/ aaron@206.189.200.129:/var/www/aaroneisenberg.me/dist/
+        scp -pr public/ aaron@206.189.200.129:/var/www/aaroneisenberg.me/dist/
