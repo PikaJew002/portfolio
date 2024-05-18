@@ -1,0 +1,27 @@
+name: Build and Deploy Application
+
+on:
+  pull_request:
+    types: [ closed ]
+    branches: [ main ]
+
+concurrency: production_environment
+
+jobs:
+  deploy:
+    name: Deploy
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: volta-cli/action@v4
+
+    - name: Compile CSS and JavaScript
+      run: |
+        npm install
+        npm run build
+
+    - name: Copy Build Artifact
+      run: |
+        scp -pr dist/ aaron@206.189.200.129:/var/www/aaroneisenberg.me/dist/
