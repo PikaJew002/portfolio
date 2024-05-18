@@ -25,4 +25,4 @@ jobs:
         username: aaron
         key: ${{ secrets.PRIVATE_KEY }}
         source: public/
-        target: /var/www/aaroneisenberg.me/dist/
+        target: /var/www/aaroneisenberg.me/
