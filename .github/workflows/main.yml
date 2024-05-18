@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Compile CSS and JavaScript
+      run: |
+        npm install
+        npm run build
     - name: Copy Build Files with SCP
       uses: appleboy/scp-action@v0.1.7
       with:
