@@ -12,16 +12,13 @@ jobs:
     name: Deploy
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - uses: volta-cli/action@v4
-
-    - name: Compile CSS and JavaScript
-      run: |
-        npm install
-        npm run build
-
-    - name: Copy Build Artifact
-      run: |
-        scp -pr public/ aaron@206.189.200.129:/var/www/aaroneisenberg.me/dist/
+    - uses: actions/checkout@v4
+    - name: Copy Build Files with SCP
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: 206.189.200.129
+        username: aaron
+        key: ${{ secrets.PRIVATE_KEY }}
+        source: public/
+        target: /var/www/aaroneisenberg.me/dist/
