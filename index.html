@@ -5,68 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aaron Eisenberg - Web Developer</title>
   </head>
-  <body class="bg-gray-200">
-		<div class="flex w-full justify-center sm:px-6">
-			<div class="flex flex-col w-full max-w-6xl bg-gray-300">
-				<div class="flex justify-between">
-					<h1 class="mt-8 mx-8 text-4xl text-gray-800 font-semibold">
-						Aaron Eisenberg
-					</h1>
-					<div class="mt-8 mr-8">
-						Location: Richmond, KY<br>
-						Email: aaron@ironmthome.com<br>
-						linkedin.com/in/ajeisenberg
-					</div>
-				</div>
-				<p class="mx-8 mb-3 text-lg">
-					Web Applications Developer
-				</p>
-				<p class="mr-10 ml-auto my-2 italic text-sm text-gray-700 font-semibold">
-					Problem solver by any means neccesary, sometimes with code
-				</p>
-			</div>
-		</div>
-		<hr class="bg-black h-0.5 w-full">
-		<main class="flex w-full justify-center sm:px-6">
-			<div class="flex flex-col w-full max-w-6xl bg-gray-300">
-				<div class="mx-8 pt-6 pb-2">
-					<h2 class="prose-h2 text-2xl mb-2">Introduction</h2>
-					<p class="text-gray-800 text-lg mb-2">
-						I'm a web applications developer with 3+ years of experience building full-stack applications from database design to UI implementation and deployment.
-					</p>
-					<p class="text-gray-800 text-lg mb-3">
-						Solving problems is what I consider to be my most valuable skill. I write tested, maintainable, boring code that complies with best practices as much as is practical to ensure ease of integration with other systems.
-					</p>
-					<h2 class="prose-h2 text-2xl mb-2">Education</h2>
-					<p class="text-gray-800 text-lg">
-						Bachlor of Science in Computer Science
-					</p>
-					<p class="text-gray-800 text-lg mb-3">
-						 Bachlor of Science in Biochemistry
-					</p>
-					<h2 class="prose-h2 text-2xl mb-2">Experience</h2>
-					<p class="text-gray-800 text-lg mb-2">
-						<span class="italic">September 2020 - August 2021</span><br>
-						<span class="my-4">Contract Developer at TEKSystems for client Kentucky Community & Technical College System</span>
-					</p>
-					<p class="text-gray-800 text-lg mb-2">
-						<span class="italic">August 2021 - Present</span><br>
-						<span class="my-4">Developer at Kentucky Community & Technical College System</span>
-					</p>
-					<p class="text-gray-800 text-lg mb-2">
-						Worked in a small team at the System Office to provide leadership, service, and support to 16 colleges. Was responsible for 8-12 small to mid-sized applications.<br>
-						Examples: API wrapper for CRM system to collect prospective student information, application for consuming CMS webhooks for various marketing search tools, internal incident log reporting system, internal admin panel.
-					</p>
-					<h2 class="prose-h2 text-2xl mb-3">Technologies</h2>
-					<p class="text-gray-800 text-lg">
-						Programming Languages/Frameworks: PHP: Laravel MVC framework, JavaScript: Vue and React UI frameworks
-					</p>
-					<p class="text-gray-800 text-lg">
-						Other: MySQL, SQLite databases, Git version control, GitLab CI/CD, DigitalOcean zero-downtime deployment
-					</p>
-				</div>
-			</div>
-		</main>
-	<script type="module" src="/main.js"></script>
+  <body class="bg-slate-200 text-slate-800 print:bg-white">
+    <article
+      class="mx-auto my-8 w-full max-w-[8.5in] bg-white px-10 py-9 shadow-sm print:my-0 print:max-w-none print:px-0 print:py-0 print:shadow-none"
+    >
+      <header class="flex flex-col gap-4 border-b border-slate-300 pb-5 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <h1 class="text-3xl font-semibold tracking-tight text-slate-900">
+            Aaron Eisenberg
+          </h1>
+          <p class="mt-1 text-lg text-slate-600">
+            Web Applications Developer
+          </p>
+          <p class="mt-2 text-sm italic text-slate-500">
+            Problem solver by any means necessary, sometimes with code
+          </p>
+        </div>
+        <address class="not-italic text-sm leading-6 text-slate-600 sm:text-right">
+          Richmond, KY<br />
+          <a class="text-slate-600 hover:text-slate-900 print:text-slate-800" href="mailto:aaron@ironmthome.com">aaron@ironmthome.com</a><br />
+          <a class="text-slate-600 hover:text-slate-900 print:text-slate-800" href="https://linkedin.com/in/ajeisenberg">linkedin.com/in/ajeisenberg</a>
+        </address>
+      </header>
+
+      <main class="space-y-6 pt-6">
+        <section>
+          <h2 class="mb-2 border-b border-slate-200 pb-1 text-xl font-semibold text-slate-900">
+            Introduction
+          </h2>
+          <p class="mb-2 leading-relaxed text-slate-700">
+            I'm a web applications developer with 5 years of experience building full-stack applications. I have been a solo developer supporting the needs of the system and college web leads and larger marketing departments. Full-stack in every sense: from meeting with stakeholders and planning to execution/deployment and long term maintenance.
+          </p>
+          <p class="leading-relaxed text-slate-700">
+            Solving problems is what I consider to be my most valuable skill. I write tested, maintainable, boring code that complies with best practices as much as is practical to ensure ease of integration with other systems. I am skilled at using available AI coding tools to assist.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="mb-2 border-b border-slate-200 pb-1 text-xl font-semibold text-slate-900">
+            Education
+          </h2>
+          <p class="text-slate-700">Bachelor of Science in Computer Science</p>
+          <p class="text-slate-700">Bachelor of Science in Biochemistry</p>
+        </section>
+
+        <section>
+          <h2 class="mb-3 border-b border-slate-200 pb-1 text-xl font-semibold text-slate-900">
+            Experience
+          </h2>
+          <div class="space-y-4">
+            <div>
+              <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <p class="font-medium text-slate-900">
+                  Developer, Kentucky Community &amp; Technical College System
+                </p>
+                <p class="shrink-0 text-sm italic text-slate-500">
+                  August 2021 – Present
+                </p>
+              </div>
+              <p class="mt-2 leading-relaxed text-slate-700">
+                I work on a small team at the System Office to provide leadership, service, and support to 16 colleges. I have been responsible for 8–12 small to mid-sized applications over the years.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <p class="font-medium text-slate-900">
+                  Contract Developer at TEKSystems for client Kentucky Community &amp; Technical College System
+                </p>
+                <p class="shrink-0 text-sm italic text-slate-500 sm:ml-4">
+                  September 2020 – August 2021
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="mb-2 border-b border-slate-200 pb-1 text-xl font-semibold text-slate-900">
+            Technologies
+          </h2>
+          <p class="mb-1 leading-relaxed text-slate-700">
+            <span class="font-medium text-slate-800">Languages / Frameworks:</span>
+            PHP (Laravel), JavaScript (Vue, React)
+          </p>
+          <p class="leading-relaxed text-slate-700">
+            <span class="font-medium text-slate-800">Other:</span>
+            MySQL, SQLite, Git, GitLab CI/CD, Laravel Forge, DigitalOcean, PHP Deployer, Microsoft Planner, Cursor IDE/agents
+          </p>
+        </section>
+
+        <section>
+          <h2 class="mb-3 border-b border-slate-200 pb-1 text-xl font-semibold text-slate-900">
+            Projects
+          </h2>
+          <ul class="list-disc space-y-4 pl-5 text-slate-700 [&_a]:text-blue-700 [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:text-blue-900 print:[&_a]:text-slate-800 print:[&_a]:underline">
+            <li>
+              <p class="font-medium text-slate-900">
+                Prospective Student Request for Information Forms
+              </p>
+              <p class="mt-1 leading-relaxed">
+                I built a Laravel/Vue application that sat in front of the CRM (Anthology Reach) API and was responsible for serving <a href="https://kctcs.edu/admissions/request-information/index.aspx" target="_blank">RFI forms</a> that could be used in the CMS. It allowed integration with multiple sources of leads including the 16 college sites, <a href="https://workreadykentucky.com" target="_blank">marketing sites</a>, and Meta and TikTok lead forms. For a <a href="https://workreadykentucky.com/#explore" target="_blank">cross institution marketing effort</a>, it also integrated with a Power Automate flow to send leads to other institutions contacts or into KCTCSs CRM.
+              </p>
+            </li>
+            <li>
+              <p class="font-medium text-slate-900">
+                CMS Webhook Consumer and Centralized Service
+              </p>
+              <p class="mt-1 leading-relaxed">
+                I built a Laravel/Vue/React service application that consumed webhooks from the CMS (Modern Campus) for either program pages or news articles which synced data across 17 sites and powered <a href="https://kctcs.edu/education-training/program-finder/index.aspx" target="_blank">system wide program</a> and <a href="https://kctcs.edu/newsroom/news/index.aspx" target="_blank">news article</a> search tools (public facing SPAs). The application also powered an admin interface for team members to manage content that synced properties to program pages and managed the global program search. This application also accepted webhooks from other applications to handle updates to assets in the CMS.
+              </p>
+            </li>
+			<li>
+			  <p class="font-medium text-slate-900">	
+				Public Search Tools	
+			  </p>
+			  <p class="mt-1 leading-relaxed">
+			    I built 2 Laravel/Vue applications that imported employee and class data from KCTCS's SIS and HRMS (PeopleSoft) and provided search interfaces for <a href="https://kctcs.edu/faculty-staff-directory.aspx" target="_blank">finding employees</a> and <a href="https://kctcs.edu/class-search.aspx" target="_blank">classes</a>.
+			  </p>
+			</li>
+            <li>
+              <p class="font-medium text-slate-900">
+                Internal Admin Panel
+              </p>
+              <p class="mt-1 leading-relaxed">
+                I built a Laravel/Vue application that powered an <a href="https://kctcsweb.com" target="_blank">admin panel</a> that allowed different apps to own their own admin panel apps (modules) that could be loaded into the admin panel keeping authentication/authorization management centralized using an Active Directory LDAP connection. It also accepted webhooks from other applications to handle updates to assets in the CMS and send notification emails.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="mb-2 border-b border-slate-200 pb-1 text-xl font-semibold text-slate-900">
+            References
+          </h2>
+          <p class="leading-relaxed text-slate-700">
+            References are available upon request.
+          </p>
+        </section>
+      </main>
+    </article>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
